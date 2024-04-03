@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on darwin)" generated="2024-04-03T12:10:44.904512" rpa="false" schemaversion="5">
+<suite id="s1" name="Amazon Testes" source="/Users/renatobatel/Documents/cursoudemyrobot/robotframework/webtesting/amazon_testes.robot">
+<test id="s1-t1" name="caso de teste 01 - Acesso ao menu &quot;Eletrônicos&quot;" line="8">
+<kw name="Abrir o navegador" owner="amazon_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-03T12:10:44.977918" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-03T12:10:44.977819" elapsed="5.300483"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-03T12:10:50.278626" elapsed="0.454424"/>
+</kw>
+<status status="PASS" start="2024-04-03T12:10:44.977518" elapsed="5.755685"/>
+</kw>
+<kw name="Acessar a home page do site Amazon.com.br" owner="amazon_resources">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-04-03T12:10:50.733874" level="INFO">Opening url 'http://www.amazon.com.br'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-04-03T12:10:50.733743" elapsed="3.486444"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${MENU_ELETRONICOS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-03T12:10:54.220303" elapsed="2.127736"/>
+</kw>
+<status status="PASS" start="2024-04-03T12:10:50.733516" elapsed="5.614608"/>
+</kw>
+<kw name="Entrar no menu &quot;Eletrônicos&quot;" owner="amazon_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-03T12:10:56.348641" level="INFO">Clicking element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]'.</msg>
+<arg>locator=${MENU_ELETRONICOS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-03T12:10:56.348437" elapsed="2.879222"/>
+</kw>
+<status status="PASS" start="2024-04-03T12:10:56.348279" elapsed="2.879465"/>
+</kw>
+<kw name="Verificar se aparece a frase &quot;Eletrônicos e Tecnologia&quot;" owner="amazon_resources">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>text=${TEXTO_HEADER_ELETRONICOS}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-03T12:10:59.228050" elapsed="0.113982"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${HEADER_ELETRONICOS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-03T12:10:59.342141" elapsed="0.032093"/>
+</kw>
+<status status="PASS" start="2024-04-03T12:10:59.227907" elapsed="0.146473"/>
+</kw>
+<doc>Esse teste verifica o menu eletronicos do site da amazon.com.br
+e verifica a categoria computadores e informatica</doc>
+<tag>categorias</tag>
+<tag>menus</tag>
+<status status="PASS" start="2024-04-03T12:10:44.977085" elapsed="14.397423"/>
+</test>
+<doc>essa suite testa o site da amazon.com.br</doc>
+<status status="PASS" start="2024-04-03T12:10:44.905829" elapsed="14.468949"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">categorias</stat>
+<stat pass="1" fail="0" skip="0">menus</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Amazon Testes">Amazon Testes</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
