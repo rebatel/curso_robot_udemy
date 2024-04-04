@@ -41,3 +41,21 @@ Clicar no botão de pesquisa
 
 Verificar o resultado da pesquisa, listando produto "${PRODUTO}
     Wait Until Element Is Visible    locator=(//span[contains(.,'${PRODUTO}')])[7]
+
+# GHERKIN STEPS
+
+Dado que estou na home page da Amazon.com.br
+    Acessar a home page do site Amazon.com.br
+    Verificar se o titulo da página fica "Amazon.com.br | Tudo pra você, de A a Z."
+
+Quando acessar o menu "Eletrônicos"
+    Entrar no menu "Eletrônicos"
+
+Então o título da página deve ficar "Eletrônicos e Tecnologia | Amazon.com.br"
+    Verificar se o titulo da página fica "Eletrônicos e Tecnologia | Amazon.com.br"
+
+ E o texto "Eletrônicos e Tecnologia" deve ser exibido na pagina
+     Verificar se aparece a frase "Eletrônicos e Tecnologia"
+
+E a categoria "Computadores e Informática"deve ser exibida na página
+    Verificar se aparece a categoria "Computadores e Informática"
