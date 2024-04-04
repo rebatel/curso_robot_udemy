@@ -2,7 +2,7 @@
 Documentation   essa suite testa o site da amazon.com.br
 Resource        amazon_resources.robot
 Test Setup      Abrir o navegador
-# Test Teardown   Fechar o navegador
+Test Teardown   Fechar o navegador
 
 *** Test Cases ***
 caso de teste 01 - Acesso ao menu "Eletrônicos"
@@ -18,9 +18,10 @@ caso de teste 01 - Acesso ao menu "Eletrônicos"
      Verificar se aparece a categoria "Tablets"
 
 
-# caso de teste 02 - Pesquisa de um Produto
-#     [Documentation]    Esse teste verifica a busca de um produto
-#     [Tags]             busca_produtos  lista-busca
-#      Acessar a home page do site Amazon.com.br
-#      Digitar o nome de produto "Xbox Series S" no campo de pesquisa
-#      Verificar o resultado da pesquisa, listando produto pesquisado
+caso de teste 02 - Pesquisa de um Produto
+    [Documentation]    Esse teste verifica a busca de um produto
+    [Tags]             busca_produtos  lista-busca
+     Acessar a home page do site Amazon.com.br
+     Digitar o nome de produto "Xbox Series S" no campo de pesquisa
+     Clicar no botão de pesquisa
+     Verificar o resultado da pesquisa, listando produto "Xbox Series S"
