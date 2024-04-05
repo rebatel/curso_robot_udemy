@@ -1,193 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on darwin)" generated="2024-04-05T13:58:29.342690" rpa="false" schemaversion="5">
-<suite id="s1" name="Amazon Testes Gherkin Bdd" source="/Users/renatobatel/Documents/cursoudemyrobot/robotframework/webtesting/amazon_testes_gherkin_bdd.robot">
+<robot generator="Robot 7.0 (Python 3.12.2 on darwin)" generated="2024-04-05T15:17:34.032152" rpa="false" schemaversion="5">
+<suite id="s1" name="Amazon Testes" source="/Users/renatobatel/Documents/cursoudemyrobot/robotframework/webtesting/amazon_testes.robot">
 <test id="s1-t1" name="caso de teste 01 - Acesso ao menu &quot;Eletrônicos&quot;" line="8">
 <kw name="Abrir o navegador" owner="amazon_resources" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-04-05T13:58:29.392259" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<arg>browser=chrome</arg>
+<msg time="2024-04-05T15:17:34.100381" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-04-05T13:58:29.392180" elapsed="4.357931"/>
+<status status="PASS" start="2024-04-05T15:17:34.100226" elapsed="4.455015"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-04-05T13:58:33.750406" elapsed="0.466983"/>
+<status status="PASS" start="2024-04-05T15:17:38.555734" elapsed="0.451927"/>
 </kw>
-<status status="PASS" start="2024-04-05T13:58:29.391895" elapsed="4.825676"/>
+<status status="PASS" start="2024-04-05T15:17:34.099825" elapsed="4.908052"/>
 </kw>
-<kw name="Dado que estou na home page da Amazon.com.br" owner="amazon_resources">
 <kw name="Acessar a home page do site Amazon.com.br" owner="amazon_resources">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-04-05T13:58:34.218471" level="INFO">Opening url 'http://www.amazon.com.br'</msg>
+<msg time="2024-04-05T15:17:39.008793" level="INFO">Opening url 'http://www.amazon.com.br'</msg>
 <arg>url=${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-04-05T13:58:34.218348" elapsed="1.820714"/>
+<status status="PASS" start="2024-04-05T15:17:39.008627" elapsed="1.108566"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>locator=${MENU_ELETRONICOS}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-04-05T13:58:36.039181" elapsed="1.174640"/>
+<status status="PASS" start="2024-04-05T15:17:40.117434" elapsed="6.678364"/>
 </kw>
-<status status="PASS" start="2024-04-05T13:58:34.218211" elapsed="2.995691"/>
+<status status="PASS" start="2024-04-05T15:17:39.008333" elapsed="7.787616"/>
 </kw>
-<kw name="Verificar se o titulo da página fica &quot;Amazon.com.br | Tudo pra você, de A a Z.&quot;" owner="amazon_resources" source_name="Verificar se o titulo da página fica &quot;${TITULO}&quot;">
-<kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2024-04-05T13:58:37.384366" level="INFO">Page title is 'Amazon.com.br | Tudo pra você, de A a Z.'.</msg>
-<arg>title=${TITULO}</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2024-04-05T13:58:37.214280" elapsed="0.170144"/>
+<kw name="Verificar se o titulo da página fica &quot;Amazon.com.br | Tudo pra você, de A a Z.&quot;">
+<msg time="2024-04-05T15:17:46.797158" level="FAIL">No keyword with name 'Verificar se o titulo da página fica "Amazon.com.br | Tudo pra você, de A a Z."' found.</msg>
+<status status="FAIL" start="2024-04-05T15:17:46.797051" elapsed="0.000685">No keyword with name 'Verificar se o titulo da página fica "Amazon.com.br | Tudo pra você, de A a Z."' found.</status>
 </kw>
-<status status="PASS" start="2024-04-05T13:58:37.214041" elapsed="0.170449"/>
-</kw>
-<status status="PASS" start="2024-04-05T13:58:34.217936" elapsed="3.166585"/>
-</kw>
-<kw name="Quando acessar o menu &quot;Eletrônicos&quot;" owner="amazon_resources">
 <kw name="Entrar no menu &quot;Eletrônicos&quot;" owner="amazon_resources">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-04-05T13:58:37.385034" level="INFO">Clicking element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]'.</msg>
-<arg>locator=${MENU_ELETRONICOS}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-05T13:58:37.384912" elapsed="3.372305"/>
+<status status="NOT RUN" start="2024-04-05T15:17:46.797976" elapsed="0.000059"/>
 </kw>
-<status status="PASS" start="2024-04-05T13:58:37.384813" elapsed="3.372480"/>
-</kw>
-<status status="PASS" start="2024-04-05T13:58:37.384678" elapsed="3.372644"/>
-</kw>
-<kw name="Então o título da página deve ficar &quot;Eletrônicos e Tecnologia | Amazon.com.br&quot;" owner="amazon_resources">
-<kw name="Verificar se o titulo da página fica &quot;Eletrônicos e Tecnologia | Amazon.com.br&quot;" owner="amazon_resources" source_name="Verificar se o titulo da página fica &quot;${TITULO}&quot;">
-<kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2024-04-05T13:58:40.866272" level="INFO">Page title is 'Eletrônicos e Tecnologia | Amazon.com.br'.</msg>
-<arg>title=${TITULO}</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2024-04-05T13:58:40.757730" elapsed="0.108603"/>
-</kw>
-<status status="PASS" start="2024-04-05T13:58:40.757630" elapsed="0.108758"/>
-</kw>
-<status status="PASS" start="2024-04-05T13:58:40.757473" elapsed="0.108938"/>
-</kw>
-<kw name=" E o texto &quot;Eletrônicos e Tecnologia&quot; deve ser exibido na pagina" owner="amazon_resources">
 <kw name="Verificar se aparece a frase &quot;Eletrônicos e Tecnologia&quot;" owner="amazon_resources" source_name="Verificar se aparece a frase &quot;${FRASE}&quot;">
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>text=${FRASE}</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-04-05T13:58:40.866801" elapsed="0.119134"/>
+<status status="NOT RUN" start="2024-04-05T15:17:46.798242" elapsed="0.000072"/>
 </kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>locator=${HEADER_ELETRONICOS}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-04-05T13:58:40.986045" elapsed="0.046342"/>
+<kw name="Verificar se o titulo da página fica &quot;Eletrônicos e Tecnologia | Amazon.com.br&quot;">
+<status status="NOT RUN" start="2024-04-05T15:17:46.799139" elapsed="0.000046"/>
 </kw>
-<status status="PASS" start="2024-04-05T13:58:40.866694" elapsed="0.165762"/>
-</kw>
-<status status="PASS" start="2024-04-05T13:58:40.866549" elapsed="0.165933"/>
-</kw>
-<kw name="E a categoria &quot;Computadores e Informática&quot;deve ser exibida na página" owner="amazon_resources">
 <kw name="Verificar se aparece a categoria &quot;Computadores e Informática&quot;" owner="amazon_resources" source_name="Verificar se aparece a categoria &quot;${NOME_CATEGORIA}&quot;">
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-04-05T13:58:41.166225" level="INFO">Element '//a[@aria-label='Computadores e Informática']' is displayed.</msg>
-<arg>locator=//a[@aria-label='${NOME_CATEGORIA}']</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-04-05T13:58:41.032879" elapsed="0.133405"/>
+<status status="NOT RUN" start="2024-04-05T15:17:46.799294" elapsed="0.000041"/>
 </kw>
-<status status="PASS" start="2024-04-05T13:58:41.032780" elapsed="0.133560"/>
-</kw>
-<status status="PASS" start="2024-04-05T13:58:41.032626" elapsed="0.133738"/>
+<kw name="Verificar se aparece a categoria &quot;Tablets&quot;" owner="amazon_resources" source_name="Verificar se aparece a categoria &quot;${NOME_CATEGORIA}&quot;">
+<status status="NOT RUN" start="2024-04-05T15:17:46.799574" elapsed="0.000077"/>
 </kw>
 <kw name="Fechar o navegador" owner="amazon_resources" type="TEARDOWN">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2024-04-05T13:58:41.517420" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-05T15:17:47.335558" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2024-04-05T13:58:41.166712" elapsed="0.350777"/>
+<status status="PASS" start="2024-04-05T15:17:46.800138" elapsed="0.535708"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-04-05T13:58:41.517602" elapsed="0.151367"/>
+<status status="PASS" start="2024-04-05T15:17:47.336014" elapsed="0.155536"/>
 </kw>
-<status status="PASS" start="2024-04-05T13:58:41.166570" elapsed="0.502469"/>
+<status status="PASS" start="2024-04-05T15:17:46.799952" elapsed="0.691741"/>
 </kw>
 <doc>Esse teste verifica o menu eletronicos do site da amazon.com.br
 e verifica a categoria computadores e informatica</doc>
 <tag>categorias</tag>
 <tag>menus</tag>
-<status status="PASS" start="2024-04-05T13:58:29.391500" elapsed="12.277606"/>
-</test>
-<test id="s1-t2" name="caso de teste 02 - Pesquisa de um Produto" line="18">
-<kw name="Abrir o navegador" owner="amazon_resources" type="SETUP">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-04-05T13:58:41.669715" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<arg>browser=chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-04-05T13:58:41.669635" elapsed="4.338652"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-04-05T13:58:46.008515" elapsed="0.453580"/>
-</kw>
-<status status="PASS" start="2024-04-05T13:58:41.669496" elapsed="4.792735"/>
-</kw>
-<kw name="Dado que estou na home page da Amazon.com.br" owner="amazon_resources">
-<kw name="Acessar a home page do site Amazon.com.br" owner="amazon_resources">
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-04-05T13:58:46.463228" level="INFO">Opening url 'http://www.amazon.com.br'</msg>
-<arg>url=${URL}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-04-05T13:58:46.463113" elapsed="0.907358"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2024-04-05T13:58:52.704575" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-04-05T13:58:52.704705" level="FAIL">Element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]' not visible after 5 seconds.</msg>
-<arg>locator=${MENU_ELETRONICOS}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2024-04-05T13:58:47.372949" elapsed="5.332432">Element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]' not visible after 5 seconds.</status>
-</kw>
-<status status="FAIL" start="2024-04-05T13:58:46.462797" elapsed="6.242704">Element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]' not visible after 5 seconds.</status>
-</kw>
-<kw name="Verificar se o titulo da página fica &quot;Amazon.com.br | Tudo pra você, de A a Z.&quot;" owner="amazon_resources" source_name="Verificar se o titulo da página fica &quot;${TITULO}&quot;">
-<status status="NOT RUN" start="2024-04-05T13:58:52.705629" elapsed="0.000019"/>
-</kw>
-<status status="FAIL" start="2024-04-05T13:58:46.462540" elapsed="6.243141">Element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]' not visible after 5 seconds.</status>
-</kw>
-<kw name="Quando pesquisar pelo produto &quot;Xbox Series S&quot;" owner="amazon_resources">
-<status status="NOT RUN" start="2024-04-05T13:58:52.705776" elapsed="0.000012"/>
-</kw>
-<kw name="Então o título da página deve ficar &quot;Amazon.com.br : Xbox Series S&quot;" owner="amazon_resources">
-<status status="NOT RUN" start="2024-04-05T13:58:52.705859" elapsed="0.000014"/>
-</kw>
-<kw name="E um produto da linha &quot;Xbox Series S&quot; deve ser mostrado na página" owner="amazon_resources">
-<status status="NOT RUN" start="2024-04-05T13:58:52.705934" elapsed="0.000011"/>
-</kw>
-<kw name="Fechar o navegador" owner="amazon_resources" type="TEARDOWN">
-<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2024-04-05T13:58:52.946439" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2024-04-05T13:58:52.706208" elapsed="0.240288"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-04-05T13:58:52.946612" elapsed="0.102170"/>
-</kw>
-<status status="PASS" start="2024-04-05T13:58:52.706074" elapsed="0.342823"/>
-</kw>
-<doc>Esse teste verifica a busca de um produto</doc>
-<tag>busca_produtos</tag>
-<tag>lista-busca</tag>
-<status status="FAIL" start="2024-04-05T13:58:41.669280" elapsed="11.379691">Element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]' not visible after 5 seconds.</status>
+<status status="FAIL" start="2024-04-05T15:17:34.099317" elapsed="13.392598">No keyword with name 'Verificar se o titulo da página fica "Amazon.com.br | Tudo pra você, de A a Z."' found.</status>
 </test>
 <doc>essa suite testa o site da amazon.com.br</doc>
-<status status="FAIL" start="2024-04-05T13:58:29.343618" elapsed="23.705679"/>
+<status status="FAIL" start="2024-04-05T15:17:34.034356" elapsed="13.457991"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="1" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">busca_produtos</stat>
-<stat pass="1" fail="0" skip="0">categorias</stat>
-<stat pass="0" fail="1" skip="0">lista-busca</stat>
-<stat pass="1" fail="0" skip="0">menus</stat>
+<stat pass="0" fail="1" skip="0">categorias</stat>
+<stat pass="0" fail="1" skip="0">menus</stat>
 </tag>
 <suite>
-<stat pass="1" fail="1" skip="0" id="s1" name="Amazon Testes Gherkin Bdd">Amazon Testes Gherkin Bdd</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Amazon Testes">Amazon Testes</stat>
 </suite>
 </statistics>
 <errors>

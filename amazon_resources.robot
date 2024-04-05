@@ -42,6 +42,13 @@ Clicar no botão de pesquisa
 Verificar o resultado da pesquisa, listando produto "${PRODUTO}
     Wait Until Element Is Visible    locator=(//span[contains(.,'${PRODUTO}')])[7]
 
+Adicionar o produto "${PRODUTO}" no carrinho
+    Click Element    locator=//span[@class='a-size-base-plus a-color-base a-text-normal'][contains(.,'${PRODUTO}')]
+    Wait Until Element Is Visible    locator=${BTN_ADD_CARRINHO}
+    Click Button    locator=${BTN_ADD_CARRINHO}
+    Wait Until Element Is Visible    locator=${NAO_OBRIGADO}
+    Click Button    locator=${NAO_OBRIGADO}
+
 # GHERKIN STEPS
 
 Dado que estou na home page da Amazon.com.br
